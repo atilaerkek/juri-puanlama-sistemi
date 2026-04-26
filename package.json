@@ -1,7 +1,7 @@
 {
   "name": "juri-puanlama-sistemi",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -12,18 +12,10 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.22.0",
-    "@supabase/supabase-js": "^2.39.0",
-    "@tanstack/react-query": "^5.0.0",
-    "lucide-react": "^0.300.0",
-    "clsx": "^2.1.0",
-    "tailwind-merge": "^2.2.0"
+    "@supabase/supabase-js": "^2.39.0"
   },
   "devDependencies": {
-    "@types/react": "^18.2.0",
-    "@types/react-dom": "^18.2.0",
     "@vitejs/plugin-react": "^4.2.0",
-    "vite": "^5.0.0",
-    "typescript": "^5.2.0",
-    "@types/node": "^20.0.0"
+    "vite": "^5.0.0"
   }
 }
