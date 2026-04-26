@@ -2,14 +2,13 @@ import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 import path from 'path'
 
-// https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
-  // GitHub Pages için sitenizin klasör yolu
+  // GitHub Pages ana dizini
   base: '/juri-puanlama-sistemi/',
   resolve: {
     alias: {
-      // Proje içindeki @ işaretinin src klasörünü görmesini sağlar
+      // Projenin içindeki dosya yollarını düzeltir
       "@": path.resolve(__dirname, "./src"),
     },
   },
