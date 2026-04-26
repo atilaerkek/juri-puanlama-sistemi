@@ -1,14 +1,13 @@
-import { defineConfig } from 'vite';
-import react from '@vitejs/plugin-react';
+import { defineConfig } from 'vite'
+import react from '@vitejs/plugin-react'
+import path from 'path'
 
-// https://vitejs.dev/config/
 export default defineConfig({
-  // Depo adınız juri-puanlama-sistemi olduğu için bu yol zorunludur
-  base: '/juri-puanlama-sistemi/',
   plugins: [react()],
+  base: '/juri-puanlama-sistemi/',
   resolve: {
     alias: {
-      '@': '/src',
+      "@": path.resolve(__dirname, "./src"),
     },
   },
-});
+})
