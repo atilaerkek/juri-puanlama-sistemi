@@ -12,7 +12,6 @@ const App = () => (
     <TooltipProvider>
       <Toaster />
       <Sonner />
-      {/* GitHub Pages klasör yolu buraya eklendiğinde mavi ekran gider */}
       <BrowserRouter basename="/juri-puanlama-sistemi">
         <Routes>
           <Route path="/" element={<Index />} />
