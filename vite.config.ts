@@ -3,7 +3,12 @@ import react from '@vitejs/plugin-react';
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: '/juri-puanlama-sistemi/', // BURAYI EKLEYİN (Deponuzun adıyla aynı olmalı)
+  // Depo adınız juri-puanlama-sistemi olduğu için bu yol zorunludur
+  base: '/juri-puanlama-sistemi/',
   plugins: [react()],
-  // ... diğer ayarlarınız kalabilir
+  resolve: {
+    alias: {
+      '@': '/src',
+    },
+  },
 });
